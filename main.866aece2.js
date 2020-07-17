@@ -7,4 +7,4 @@ var e,t=arguments[3];!function(t,i){"object"==typeof exports&&"object"==typeof m
 },{"babylonjs":"SZeO"}],"M8m5":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("babylonjs"),r=require("./createDynamicTexture"),t=document.getElementById("canvas"),n=new e.Engine(t),a=new e.Scene(n),i=new e.FreeCamera("camera1",new e.Vector3(0,5,-10),a);i.setTarget(e.Vector3.Zero()),i.attachControl(t,!0);var o=new e.HemisphericLight("light1",new e.Vector3(0,1,0),a);o.intensity=.7;var c=e.Mesh.CreateSphere("sphere1",16,2,a);c.position.y=1;var s=new e.StandardMaterial("materialSphere",a),u=r.createDynamicTexture("texture",a);s.diffuseTexture=u,c.material=s;var d=e.Mesh.CreateGround("ground1",6,6,2,a);n.runRenderLoop(function(){a.render()}),window.addEventListener("resize",function(){n.resize()});
 },{"babylonjs":"SZeO","./createDynamicTexture":"q1LP"}]},{},["M8m5"], null)
-//# sourceMappingURL=main.866aece2.js.map
+//# sourceMappingURL=PUBLIC_URL/main.866aece2.js.map

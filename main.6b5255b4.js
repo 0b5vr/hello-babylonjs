@@ -5,4 +5,4 @@ var e,t=arguments[3];!function(t,i){"object"==typeof exports&&"object"==typeof m
 },{}],"RnsM":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("babylonjs"),r=document.getElementById("canvas"),n=new e.Engine(r),t=new e.Scene(n),o=new e.FreeCamera("camera1",new e.Vector3(0,5,-10),t);o.setTarget(e.Vector3.Zero()),o.attachControl(r,!0);var a=new e.HemisphericLight("light1",new e.Vector3(0,1,0),t);a.intensity=.7;var i=e.Mesh.CreateSphere("sphere1",16,2,t);i.position.y=1;var s=e.Mesh.CreateGround("ground1",6,6,2,t);n.runRenderLoop(function(){t.render()}),window.addEventListener("resize",function(){n.resize()});
 },{"babylonjs":"SZeO"}]},{},["RnsM"], null)
-//# sourceMappingURL=main.6b5255b4.js.map
+//# sourceMappingURL=PUBLIC_URL/main.6b5255b4.js.map
