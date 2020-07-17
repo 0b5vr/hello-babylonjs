@@ -31,6 +31,8 @@ jobs:
         path: pages
     - name: Deploy gh-pages
       uses: peaceiris/actions-gh-pages@v3
+      env:
+        PUbLIC_URL: /hello-babylonjs/
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./pages
